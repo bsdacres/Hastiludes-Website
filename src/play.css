@@ -1,0 +1,11 @@
+* {
+  font-family: 'EB Garamond';
+}
+
+.Main-Page {
+  background-color: black;
+  height: 100vh;
+  display: -ms-grid;
+  display: grid;
+}
+/*# sourceMappingURL=play.css.map */

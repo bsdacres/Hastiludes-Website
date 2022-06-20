@@ -1,0 +1,350 @@
+@import url("https://fonts.googleapis.com/css?family=EB+Garamond");
+
+.Global {
+  height: 100vh;
+  width: 100vw;
+}
+
+.Main {
+  display: relative;
+  height: 100vh;
+  width: 100vw;
+  background-image: url(BG-1.png);
+  animation: moving 30s linear infinite ;
+  font-family: 'EB Garamond';
+  font-weight: 100;
+
+    h1 {
+      text-transform: uppercase;
+      letter-spacing: .6rem;
+    }
+}
+
+.button {
+  background-color: #000000;
+  border-radius: 20px;
+  border-style: groove;
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+  font-family: 'EB Garamond';
+  font-weight: bold;
+  letter-spacing: 3px;
+  width: 180px;
+  height: 60px;
+  text-transform: uppercase;
+  z-index: 3;
+}
+
+  .button:hover {
+    color: #ffffff;
+    animation: button-hover ease-in-out 3s infinite;
+    border: #ddd;
+    border-style: groove;
+  }
+
+  @keyframes button-hover {
+      0%{ 
+          border: rgba($color: #ffffff, $alpha: 0);
+          color: #000000;
+
+      }
+
+      100% {
+        border: rgba($color: #ffffff, $alpha: 1);
+        color: white;
+      }
+  }
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes moving {
+	0% {
+		background-position: 0% 0%;
+	}
+
+	100% {
+		background-position: 100% 0%;
+	}
+}
+
+
+.front {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+
+    .card-text {
+      height: 100%;
+      width: 100%;
+      font-size: 2rem;
+      display: relative;
+      margin: auto 0;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      -webkit-animation-name: bob-on-hover-float, bob-on-hover;
+      animation-name: bob-on-hover-float, bob-on-hover;
+      -webkit-animation-duration: .3s, 1.5s;
+      animation-duration: .3s, 1.5s;
+      -webkit-animation-delay: 0s, .3s;
+      animation-delay: 0s, .3s;
+      -webkit-animation-timing-function: ease-out, ease-in-out;
+      animation-timing-function: ease-out, ease-in-out;
+      -webkit-animation-iteration-count: 1, infinite;
+      animation-iteration-count: 1, infinite;
+      -webkit-animation-fill-mode: forwards;
+      animation-fill-mode: forwards;
+      -webkit-animation-direction: normal, alternate;
+      animation-direction: normal, alternate;
+
+      .innerCard{
+        position: relative;
+        text-align: center;
+        width: 50%;
+        height: 55%;
+        }
+          hr {
+            width: 70%;
+          }
+
+       }
+      
+        .footnote {
+          font-style: italic;
+          font-size: 1.2rem;
+        }
+    }
+
+
+
+.img:hover {
+  transition: 3s ease-in-out;
+  transform: left 50px;
+  cursor: pointer;
+}
+
+.card {
+  height: 100vh;
+  width: 124vw;
+
+  img {
+    width: 108%;
+      }
+  }
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+/* Style the links inside the navigation bar */
+
+.navbar{
+  position: fixed;
+  display: flex;
+  height: vh;
+  width: 97vw;
+  text-transform: uppercase;
+  letter-spacing: .2rem;
+  background-color: rgba($color: #000000, $alpha: .2);
+  text-align: right;
+  justify-content: flex-end;
+  z-index: 2;
+  padding-right: 100px;
+}
+
+.navbar a {
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar a:hover {
+  background-color: rgba($color: #ffffff, $alpha: 1);
+  color: black;
+}
+
+
+.metamask a {
+  background-color: #a10a0a;
+  display: flex;
+  font-size: 14px;
+  height: 2vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .metamask-img{
+    height: 20px;
+  }
+
+  :hover{
+    background-color: #b36602;
+    color: #ddd;
+  }
+}
+
+
+
+@-webkit-keyframes bob-on-hover {
+  0% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+  50% {
+    -webkit-transform: translateY(-4px);
+    transform: translateY(-4px);
+  }
+  100% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+}
+@keyframes bob-on-hover {
+  0% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+  50% {
+    -webkit-transform: translateY(-4px);
+    transform: translateY(-4px);
+  }
+  100% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+}
+@-webkit-keyframes bob-on-hover-float {
+  100% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+}
+@keyframes bob-on-hover-float {
+  100% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+}
+
+
+.bob-on-hover:hover, .bob-on-hover:focus, .bob-on-hover:active {
+  -webkit-animation-name: bob-on-hover-float, bob-on-hover;
+  animation-name: bob-on-hover-float, bob-on-hover;
+  -webkit-animation-duration: .3s, 1.5s;
+  animation-duration: .3s, 1.5s;
+  -webkit-animation-delay: 0s, .3s;
+  animation-delay: 0s, .3s;
+  -webkit-animation-timing-function: ease-out, ease-in-out;
+  animation-timing-function: ease-out, ease-in-out;
+  -webkit-animation-iteration-count: 1, infinite;
+  animation-iteration-count: 1, infinite;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-direction: normal, alternate;
+  animation-direction: normal, alternate;
+}
+
+
+@media only screen and (max-width: 600px) {
+  
+  
+  .img{
+    display: none;
+  }
+
+  .navbar {
+    padding-right: 0;
+    text-align: center;
+    justify-content: center;
+    font-size: small;
+  }
+
+  .Main {
+    position: relative;
+    top: 10px;
+    display: block;
+    height: 900px;
+    width: 500px;
+    font-size: 1px;
+  }
+
+
+  .card{
+    display:none;
+  }
+
+  .front {
+    min-height: 100%;
+    display: flexbox;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    
+  
+      .card-text {
+        height: 80%;
+        width: 80%;
+        font-size: 1.2rem;
+        color: white;
+        display: relative;
+        justify-content: center;
+        align-items: center;
+        -webkit-animation-name: bob-on-hover-float, bob-on-hover;
+        animation-name: bob-on-hover-float, bob-on-hover;
+        -webkit-animation-duration: .3s, 1.5s;
+        animation-duration: .3s, 1.5s;
+        -webkit-animation-delay: 0s, .3s;
+        animation-delay: 0s, .3s;
+        -webkit-animation-timing-function: ease-out, ease-in-out;
+        animation-timing-function: ease-out, ease-in-out;
+        -webkit-animation-iteration-count: 1, infinite;
+        animation-iteration-count: 1, infinite;
+        -webkit-animation-fill-mode: forwards;
+        animation-fill-mode: forwards;
+        -webkit-animation-direction: normal, alternate;
+        animation-direction: normal, alternate;
+  
+        .innerCard{
+          position: relative;
+          text-align: center;
+          width: 100%;
+          height: 100%;
+          }
+            hr {
+              width: 70%;
+            }
+  
+         }
+        
+          .footnote {
+            font-style: italic;
+            font-size: 1.2rem;
+          }
+      }
+  
+  
+}

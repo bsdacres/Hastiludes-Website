@@ -1,0 +1,596 @@
+* {
+  font-family: 'EB Garamond';
+}
+
+.backdrop {
+  height: 100vh;
+  width: 100vw;
+  background-image: url(BG-1.png);
+  -webkit-animation: moving 30s linear infinite;
+          animation: moving 30s linear infinite;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-size: 400% 400%;
+}
+
+.main {
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: large;
+  color: azure;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-weight: 100;
+  letter-spacing: .6rem;
+  text-shadow: 10px #000000;
+  -webkit-transition: 3s;
+  transition: 3s;
+}
+
+@-webkit-keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.card-1 {
+  background-image: url(card-3.png);
+  min-height: 700px;
+  min-width: 500px;
+  background-size: cover;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 30px;
+  border-radius: 20px;
+  -webkit-animation: float 8s linear infinite;
+          animation: float 8s linear infinite;
+  -webkit-transition: rotate 2s;
+  transition: rotate 2s;
+}
+
+.card-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-image: url(card-2.png);
+  background-size: cover;
+  min-height: 700px;
+  min-width: 500px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 30px;
+  border-radius: 20px;
+  -webkit-animation: float 7s ease-out infinite;
+          animation: float 7s ease-out infinite;
+}
+
+.card-3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 30px;
+  display: flex;
+  background-size: cover;
+  background-image: url(card-1.png);
+  min-height: 700px;
+  min-width: 500px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 20px;
+  -webkit-animation: float 6s ease-in-out infinite;
+          animation: float 6s ease-in-out infinite;
+}
+
+.card-4 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 30px;
+  display: flex;
+  background-size: cover;
+  background-image: url(card-4.png);
+  height: 700px;
+  width: 500px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 20px;
+  -webkit-animation: float 6s ease-in-out infinite;
+          animation: float 6s ease-in-out infinite;
+}
+
+@-webkit-keyframes float {
+  0% {
+    -webkit-box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+            box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+    -webkit-transform: translatey(0px);
+            transform: translatey(0px);
+  }
+  50% {
+    -webkit-box-shadow: 0 25px 15px 0px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 25px 15px 0px rgba(0, 0, 0, 0.2);
+    -webkit-transform: translatey(-20px);
+            transform: translatey(-20px);
+  }
+  100% {
+    -webkit-box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+            box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+    -webkit-transform: translatey(0px);
+            transform: translatey(0px);
+  }
+}
+
+@keyframes float {
+  0% {
+    -webkit-box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+            box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+    -webkit-transform: translatey(0px);
+            transform: translatey(0px);
+  }
+  50% {
+    -webkit-box-shadow: 0 25px 15px 0px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 25px 15px 0px rgba(0, 0, 0, 0.2);
+    -webkit-transform: translatey(-20px);
+            transform: translatey(-20px);
+  }
+  100% {
+    -webkit-box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+            box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+    -webkit-transform: translatey(0px);
+            transform: translatey(0px);
+  }
+}
+
+.flicker {
+  font-size: 2rem;
+  font-weight: 100;
+  letter-spacing: 15px;
+  opacity: 1;
+  -webkit-animation: flicker 6s ease-in-out infinite;
+          animation: flicker 6s ease-in-out infinite;
+  position: absolute;
+  bottom: 180px;
+  text-transform: uppercase;
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
+}
+
+@-webkit-keyframes flicker {
+  0% {
+    opacity: .9;
+  }
+  50% {
+    opacity: .2;
+  }
+  100% {
+    opacity: .9;
+  }
+}
+
+@keyframes flicker {
+  0% {
+    opacity: .9;
+  }
+  50% {
+    opacity: .2;
+  }
+  100% {
+    opacity: .9;
+  }
+}
+
+.text-card {
+  -webkit-backdrop-filter: blur(40px);
+          backdrop-filter: blur(40px);
+  border-radius: 10px;
+  font-size: .5rem;
+  letter-spacing: 5px;
+  text-align: center;
+  position: absolute;
+  bottom: 1px;
+}
+
+@-webkit-keyframes fade {
+  0% {
+    -webkit-backdrop-filter: saturate(1.5);
+            backdrop-filter: saturate(1.5);
+    -webkit-backdrop-filter: blur(20px);
+            backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: contrast(40%);
+            backdrop-filter: contrast(40%);
+    -webkit-backdrop-filter: brightness(0.5);
+            backdrop-filter: brightness(0.5);
+  }
+  50% {
+    -webkit-backdrop-filter: saturate(5);
+            backdrop-filter: saturate(5);
+    -webkit-backdrop-filter: blur(60px);
+            backdrop-filter: blur(60px);
+    -webkit-backdrop-filter: contrast(40%);
+            backdrop-filter: contrast(40%);
+    -webkit-backdrop-filter: brightness(0.8);
+            backdrop-filter: brightness(0.8);
+  }
+  100% {
+    -webkit-backdrop-filter: saturate(1.5);
+            backdrop-filter: saturate(1.5);
+    -webkit-backdrop-filter: blur(20px);
+            backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: contrast(40%);
+            backdrop-filter: contrast(40%);
+    -webkit-backdrop-filter: brightness(0.5);
+            backdrop-filter: brightness(0.5);
+  }
+}
+
+@keyframes fade {
+  0% {
+    -webkit-backdrop-filter: saturate(1.5);
+            backdrop-filter: saturate(1.5);
+    -webkit-backdrop-filter: blur(20px);
+            backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: contrast(40%);
+            backdrop-filter: contrast(40%);
+    -webkit-backdrop-filter: brightness(0.5);
+            backdrop-filter: brightness(0.5);
+  }
+  50% {
+    -webkit-backdrop-filter: saturate(5);
+            backdrop-filter: saturate(5);
+    -webkit-backdrop-filter: blur(60px);
+            backdrop-filter: blur(60px);
+    -webkit-backdrop-filter: contrast(40%);
+            backdrop-filter: contrast(40%);
+    -webkit-backdrop-filter: brightness(0.8);
+            backdrop-filter: brightness(0.8);
+  }
+  100% {
+    -webkit-backdrop-filter: saturate(1.5);
+            backdrop-filter: saturate(1.5);
+    -webkit-backdrop-filter: blur(20px);
+            backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: contrast(40%);
+            backdrop-filter: contrast(40%);
+    -webkit-backdrop-filter: brightness(0.5);
+            backdrop-filter: brightness(0.5);
+  }
+}
+
+.title {
+  font-size: .8rem;
+  text-transform: uppercase;
+}
+
+.lore {
+  font-size: 1rem;
+  letter-spacing: 0;
+  margin: 20px;
+}
+
+.news-columns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.play {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-image: url(bg-1.jpg);
+  height: 100vh;
+  width: 100vw;
+  color: #df912d;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-animation: moving 60s linear infinite;
+          animation: moving 60s linear infinite;
+}
+
+.background-hands {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-image: url(background-2.png);
+  height: 100vh;
+  width: 100vw;
+  background-size: 90%;
+  background-repeat: none;
+  background-position: 0 0 0 0;
+  -webkit-animation: hue 5s ease-in-out infinite;
+          animation: hue 5s ease-in-out infinite;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@-webkit-keyframes hue {
+  0% {
+    -webkit-filter: hue-rotate(0deg);
+            filter: hue-rotate(0deg);
+  }
+  50% {
+    -webkit-filter: hue-rotate(15deg);
+            filter: hue-rotate(15deg);
+  }
+  100% {
+    -webkit-filter: hue-rotate(0deg);
+            filter: hue-rotate(0deg);
+  }
+}
+
+@keyframes hue {
+  0% {
+    -webkit-filter: hue-rotate(0deg);
+            filter: hue-rotate(0deg);
+  }
+  50% {
+    -webkit-filter: hue-rotate(15deg);
+            filter: hue-rotate(15deg);
+  }
+  100% {
+    -webkit-filter: hue-rotate(0deg);
+            filter: hue-rotate(0deg);
+  }
+}
+
+@-webkit-keyframes moving {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 100% 0%;
+  }
+}
+
+@keyframes moving {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 100% 0%;
+  }
+}
+
+.play-text {
+  background-color: rgba(128, 108, 240, 0.1);
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
+  height: 500px;
+  width: 500px;
+  border-radius: 20px;
+  display: block;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: white;
+}
+
+.play-text h1 {
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  color: white;
+  font-size: large;
+  margin: 7px;
+}
+
+.play-text p {
+  margin: 12px;
+  font-size: large;
+}
+
+@media only screen and (max-width: 600px) {
+  body, html {
+    height: 100%;
+    margin: 0;
+  }
+  .backdrop {
+    height: 100%;
+    max-width: 100%;
+    background-image: url("");
+    -webkit-animation: moving 30s linear infinite;
+            animation: moving 30s linear infinite;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background-size: cover;
+    display: flexbox;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+  }
+  .main {
+    max-width: 600px;
+    font-size: large;
+    color: black;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    font-weight: 100;
+    letter-spacing: .6rem;
+    text-shadow: 10px #000000;
+    -webkit-transition: 3s;
+    transition: 3s;
+    color: azure;
+  }
+  .card-1 {
+    background-image: url(card-3.png);
+    max-height: -webkit-fit-content;
+    max-height: -moz-fit-content;
+    max-height: fit-content;
+    max-width: -webkit-fit-content;
+    max-width: -moz-fit-content;
+    max-width: fit-content;
+    background-size: cover;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 30px;
+    border-radius: 20px;
+    -webkit-animation: float 8s linear infinite;
+            animation: float 8s linear infinite;
+    -webkit-transition: rotate 2s;
+    transition: rotate 2s;
+  }
+  .card-2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background-image: url(card-2.png);
+    background-size: cover;
+    max-height: -webkit-fit-content;
+    max-height: -moz-fit-content;
+    max-height: fit-content;
+    max-width: -webkit-fit-content;
+    max-width: -moz-fit-content;
+    max-width: fit-content;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 30px;
+    border-radius: 20px;
+    -webkit-animation: float 7s ease-out infinite;
+            animation: float 7s ease-out infinite;
+  }
+  .card-3 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 30px;
+    background-size: cover;
+    background-image: url(card-1.png);
+    max-height: -webkit-fit-content;
+    max-height: -moz-fit-content;
+    max-height: fit-content;
+    max-width: -webkit-fit-content;
+    max-width: -moz-fit-content;
+    max-width: fit-content;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    border-radius: 20px;
+    -webkit-animation: float 6s ease-in-out infinite;
+            animation: float 6s ease-in-out infinite;
+  }
+  .card-4 {
+    display: none;
+  }
+  .play {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background-image: url(bg-1.jpg);
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    color: #df912d;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-animation: moving 60s linear infinite;
+            animation: moving 60s linear infinite;
+  }
+  .background-hands {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background-image: url(background-2.png);
+    background-size: cover;
+    background-repeat: none;
+    background-position: 0 0 0 0;
+    -webkit-animation: hue 5s ease-in-out infinite;
+            animation: hue 5s ease-in-out infinite;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .flicker {
+    font-size: small;
+    font-weight: 100;
+    letter-spacing: 15px;
+    opacity: 1;
+    -webkit-animation: flicker 6s ease-in-out infinite;
+            animation: flicker 6s ease-in-out infinite;
+    position: fixed;
+    bottom: 50px;
+    text-transform: uppercase;
+    -webkit-backdrop-filter: blur(20px);
+            backdrop-filter: blur(20px);
+  }
+}
+/*# sourceMappingURL=about.css.map */
