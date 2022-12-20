@@ -1,0 +1,14 @@
+.market {
+  background-image: url(BG-1.png);
+  -webkit-animation: moving 30s linear infinite;
+  animation: moving 30s linear infinite;
+  align-items: center;
+  justify-content: center;
+  background-size: 400% 400%;
+}
+.market .main-market {
+  height: 30vh;
+  width: 90vw;
+  margin: 0 auto;
+  background-color: antiquewhite;
+}/*# sourceMappingURL=marketplace.css.map */
