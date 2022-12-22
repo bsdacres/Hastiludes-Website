@@ -46,7 +46,6 @@ export default function App() {
                         <Route path='/' element = {<Home />} />
                         <Route path = 'news' element = {<News />} />
                         <Route path = 'codex' element = {<Codex />} />
-                        <Route path = 'market' element = {<Market />} />
                         <Route path = 'play' element = {<Play />} />
                     </Route>   
                 </Routes>   
