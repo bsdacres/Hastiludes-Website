@@ -35,6 +35,9 @@
   letter-spacing: 1px;
   border: #dddddd;
 }
+.mint-btn a:link {
+  color: #030303;
+}
 
 .mint-btn:hover {
   cursor: pointer;

@@ -26,8 +26,7 @@ export default function Nav(props) {
                     <Link to='/'>Home</Link>
                     <Link to='/news'>News</Link>
                     <Link to='/codex'>Codex</Link>
-                    <Link to='/play'>Market</Link>
-                    <Link to='/play'>Play Now</Link>
+                    <Link to='/play'>Armory</Link>
                     <div className = 'wallet-btn' >
                         <Web3Button />
                     </div>

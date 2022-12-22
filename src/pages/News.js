@@ -37,7 +37,7 @@ const news = [
     {
       title: "Hear ye, hear ye!",
       thumbnail: 'https://cdn.discordapp.com/attachments/998097105916809317/1053321111561064528/1.jpg',
-      content: "The long awaited is relic is almsot here! Patrons who participate have the option to claim a physical equalavent in the near future. Join our Discord to prepare for the mint!"
+      content: "The long awaited relic is almost here! Patrons who participate in the mint have the option to claim a physical equalavent in the near future. Join our Discord to prepare for the mint!"
     }
   ]
 

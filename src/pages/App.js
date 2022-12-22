@@ -5,6 +5,7 @@ import SharedLayout from "../pages/SharedLayout";
 import Play from './Play';
 import News from '../pages/News';
 import { BrowserRouter ,Routes,Route, useLocation } from "react-router-dom";
+import  Market  from './Market';
 import Codex from './Codex';
 import {
     EthereumClient,
@@ -46,6 +47,7 @@ export default function App() {
                         <Route path='/' element = {<Home />} />
                         <Route path = 'news' element = {<News />} />
                         <Route path = 'codex' element = {<Codex />} />
+                        <Route path = 'market' element = {<Market />} />
                         <Route path = 'play' element = {<Play />} />
                     </Route>   
                 </Routes>   

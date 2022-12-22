@@ -32,11 +32,15 @@
   font-size: large;
   text-transform: uppercase;
   letter-spacing: 1px;
-  border: #dddddd;
-
-
+  border: #dddddd;  
   
+  a:link{
+    color: #030303;
+  }
+
 }
+
+
 
 .mint-btn:hover{
   cursor: pointer;

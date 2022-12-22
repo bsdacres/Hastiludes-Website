@@ -44,7 +44,7 @@ export default function Codex(props) {
                         </i>
                       <br></br>
                       <br></br>
-                      This item may be redeemed for the physical equilavent in the near future. If you initially purchased the physical item before the mint you qualify for a discounted mint cost. Please Join our Discord Server to stat up to date on all news. 
+                      This item may be redeemed for the physical equilavent in the near future. If you initially purchased the physical item before the mint you qualify for a discounted mint cost. Please Join our Discord Server to stay up to date on all news. 
                     </p>
                    <MintButton /> 
                   </div>
