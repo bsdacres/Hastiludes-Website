@@ -36,7 +36,7 @@ const news = [
   const newsSlides = [
     {
       title: "Hear ye, hear ye!",
-      thumbnail: 'https://cdn.discordapp.com/attachments/998097105916809317/1053321111561064528/1.jpg',
+      thumbnail: 'https://cdn.discordapp.com/attachments/1023739791612850176/1057277717088833606/2.jpg',
       content: "The long awaited relic is almost here! Patrons who participate in the mint have the option to claim a physical equalavent in the near future. Join our Discord to prepare for the mint!"
     }
   ]

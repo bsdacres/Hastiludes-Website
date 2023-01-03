@@ -1,0 +1,40 @@
+.render {
+  display: relative;
+  width: 100vw;
+  height: 100vh;
+  background-image: linear-gradient(to bottom, rgb(1, 0, 8), rgb(39, 43, 23));
+  -webkit-animation: gradient 15s linear infinite;
+          animation: gradient 15s linear infinite;
+  -webkit-backdrop-filter: blur(6px);
+          backdrop-filter: blur(6px);
+  background-position: center;
+  background-size: cover;
+  font-family: "EB Garamond";
+  font-weight: 100;
+  overflow: hidden;
+  background-size: 50%;
+}
+
+@-webkit-keyframes gradient {
+  0% {
+    background-position: 0% 0%;
+  }
+  50% {
+    background-position: 100% 0% 0% 0%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 0%;
+  }
+  50% {
+    background-position: 100% 0% 0% 0%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
+}/*# sourceMappingURL=render.css.map */
