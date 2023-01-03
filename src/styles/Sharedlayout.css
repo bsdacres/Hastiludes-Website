@@ -19,6 +19,21 @@
   letter-spacing: 0.6rem;
 }
 
+.mobile-page {
+  height: 100vh;
+  width: 100vw;
+  color: #ffffff;
+  position: absolute;
+  z-index: 100;
+  background-image: url(BG-1.png);
+  -webkit-animation: moving 30s linear infinite;
+          animation: moving 30s linear infinite;
+}
+.mobile-page h6 {
+  text-align: center;
+  margin-top: 30vh;
+}
+
 .address-btn {
   color: #f2f2f2;
   border-radius: 10%;

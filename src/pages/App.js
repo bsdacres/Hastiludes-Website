@@ -2,8 +2,8 @@ import '../styles/Sharedlayout.css'
 import React, { useEffect } from "react";
 import Home from '../pages/Home'
 import SharedLayout from "../pages/SharedLayout";
-import Play from './Play';
 import News from '../pages/News';
+import Render from './Render';
 import { BrowserRouter ,Routes,Route, useLocation } from "react-router-dom";
 import Codex from './Codex';
 import {
@@ -46,7 +46,7 @@ export default function App() {
                         <Route path='/' element = {<Home />} />
                         <Route path = 'news' element = {<News />} />
                         <Route path = 'codex' element = {<Codex />} />
-                        <Route path = 'play' element = {<Play />} />
+                        <Route path = 'play' element = {<Render/>} />
                     </Route>   
                 </Routes>   
             </WagmiConfig>

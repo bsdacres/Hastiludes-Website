@@ -17,8 +17,8 @@ export default function Play() {
                     <div className="play-text">
                         <br />
                         <h1>OOPS...</h1>
-                        <p>Looks like your wallet if not connected... </p>
-                        <p>Please connect your wallet using the button in the top right corner</p>
+                        <p>Looks like we're still working on something special</p>
+                        <p>Coming back Later</p>
                         <br />
                         <br />
                     </div>

@@ -10,7 +10,7 @@ export const MintButton =()=>{
   const { address, isConnecting, isDisconnected, isConnected } = useAccount()
   
   if(isConnected){
-    mint = 'Mint Now'
+    mint = 'Coming Soon'
   } else if (isConnecting){
     mint =' Connecting'
   } else{

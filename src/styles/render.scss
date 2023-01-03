@@ -1,0 +1,26 @@
+.render {
+  display: relative;
+  width: 100vw;
+  height: 100vh;
+  background-image: linear-gradient(to bottom, rgb(1, 0, 8) , rgb(39, 43, 23));
+  animation: gradient 15s linear infinite;
+  backdrop-filter: blur(6px);
+  background-position: center;
+  background-size: cover;
+  font-family: 'EB Garamond';
+  font-weight: 100;
+  overflow: hidden;
+  background-size: 50%;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 0%;
+  }
+  50% {
+    background-position: 100% 0% 0% 0%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
+}

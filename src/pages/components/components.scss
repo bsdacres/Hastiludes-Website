@@ -32,11 +32,15 @@
   font-size: large;
   text-transform: uppercase;
   letter-spacing: 1px;
-  border: #dddddd;
-
-
+  border: #dddddd;  
   
+  a:link{
+    color: #030303;
+  }
+
 }
+
+
 
 .mint-btn:hover{
   cursor: pointer;
@@ -63,3 +67,56 @@
 }
 
 
+.main-ui {
+ background-color: rgba(13, 97, 97, 0.041);
+ position: absolute;
+ border-radius: 10px;
+ backdrop-filter: blur(30px);
+ height: 80vh;
+ width: 50vw;
+ bottom:10vh;
+ left: 1%;
+}
+
+  
+.tag{
+  color: rgb(238, 237, 237);
+  background-color: rgba(0, 0, 0, 0.404);
+  border-radius: 10px;
+  text-transform: uppercase;
+  backdrop-filter: blur(20px);
+  padding: 10px;
+}
+
+.stats{
+  position: absolute;
+  right: 10%;
+  top: 25vh;
+  color: aliceblue;
+}
+
+.storage{
+  display: flex;
+  flex-wrap: wrap;
+}
+.storage-item{
+  background-color:rgba(161, 188, 247, 0.15);
+  width: 23%;
+  margin: 1%;
+  border-radius: 10px;
+  backdrop-filter: blur(5px);
+
+  img{
+    margin: auto 0;
+  }
+
+  h2{
+    background-color: #03030385;
+    color: antiquewhite;
+    text-align: center;
+  }
+}
+
+.storage-item :hover{
+  scale: (.5);
+}
