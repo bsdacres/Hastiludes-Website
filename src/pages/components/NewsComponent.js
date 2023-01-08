@@ -16,9 +16,6 @@ export default function NewsComponent(props){
           <h4>{props.date}</h4>
           <p>{props.preview}</p>
         </div>
-        <Button
-        label ='Read More'
-        />
       </div>
     </>
   )

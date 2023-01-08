@@ -125,4 +125,9 @@
 
 .storage-item :hover {
   scale: 0.5;
+}
+
+.news-carousel {
+  background-position: top;
+  background-size: contain;
 }/*# sourceMappingURL=components.css.map */
