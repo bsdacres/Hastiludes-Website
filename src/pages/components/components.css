@@ -73,13 +73,19 @@
   }
 }
 .main-ui {
-  background-image: linear-gradient(to left, rgb(0, 0, 0), rgba(255, 0, 0, 0));
+  background-image: linear-gradient(to left, rgba(20, 20, 20, 0.322), rgba(255, 0, 0, 0)), url(/public/assets/card-5.png);
   position: absolute;
   border-radius: 10px;
+  background-size: cover;
   height: 95vh;
   width: 40vw;
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
   bottom: 0;
   left: 0;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 .tag {
@@ -100,7 +106,32 @@
 
 .storage {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
+  margin: 0% 5% 5% 25%;
+  font-size: small;
+  scale: 0.8;
+}
+.storage .main-data {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-top: rgba(221, 221, 221, 0.5215686275) dashed 4px;
+}
+.storage .main-data .metadata {
+  background-color: #030303;
+  height: 3vh;
+  width: 50%;
+  text-align: center;
+  border-radius: 10px;
+  border: rgba(221, 221, 221, 0.6980392157) solid 2px;
+  padding: 10px 15px;
+  position: absolute;
+  right: 0;
+}
+.storage .main-data .metadata h1 {
+  margin: auto 0;
 }
 
 .storage-item {
@@ -127,4 +158,42 @@
 .news-carousel {
   background-position: bottom;
   background-size: contain;
+}
+
+.attributes2 {
+  background-color: rgba(3, 3, 3, 0.3019607843);
+  height: 10vh;
+  font-size: large;
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 10px;
+  -webkit-backdrop-filter: blur(30px);
+          backdrop-filter: blur(30px);
+}
+.attributes2 .attr-box2 {
+  margin: 2%;
+  width: 46%;
+}
+.attributes2 .attr-box2 img {
+  height: 10px;
+  margin: auto 0;
+  padding-right: 6px;
+  filter: grayscale(100%);
+  filter: invert(1);
+}
+
+.lore-armory {
+  font-size: larger;
+  padding: 10%;
+  text-align: center;
+}
+
+.cycle {
+  display: flex;
+  flex-direction: row;
+}
+.cycle h1 {
+  padding: 10%;
+  margin: 0 auto;
+  background-color: rgba(73, 69, 69, 0.2745098039);
 }/*# sourceMappingURL=components.css.map */

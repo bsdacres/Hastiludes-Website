@@ -10,7 +10,7 @@ export function Amancer(props) {
   const { nodes, materials } = useGLTF('/Amancer.glb')
   return (
     <group {...props} dispose={null}>
-      <Sparkles count={100} scale={1} size={10} speed={1} />
+      <Sparkles count={100} scale={1} size={10} speed={1} color='pink' />
       <mesh geometry={nodes.Tunic.geometry} material={materials.SleevedMat}  position={[.7, -2.3, -2.5]}  scale={0.02} />
     </group>
   )

@@ -10,8 +10,8 @@ export function Voe(props) {
   const { nodes, materials } = useGLTF('/Voe.glb')
   return (
     <group {...props} dispose={null}>
-      <Sparkles count={100} scale={1} size={20} speed={2} />
-      <mesh geometry={nodes.HoodieSub3V2Mesh.geometry} material={materials['HoodieMtl.004']}  position={[2, -14, -10]} scale={0.1} />
+      <Sparkles count={100} scale={1} size={20} speed={1}  />
+      <mesh geometry={nodes.HoodieSub3V2Mesh.geometry} material={materials['HoodieMtl.004']}  position={[3, -14, -9]} scale={0.1} />
     </group>
   )
 }

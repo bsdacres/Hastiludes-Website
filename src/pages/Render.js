@@ -20,6 +20,9 @@ export default function Render(props){
   const {progress} = useProgress();
   const [show, setShow] = useState(true)
 
+  function handleState(){
+    setShow(()=>!show)
+  }
   return(
   <motion.div 
   initial={{ opacity: 0, scale: 0.95 }}
@@ -28,6 +31,7 @@ export default function Render(props){
   className='render'
   > 
     <Canvas  shadows flat camera={{ position: [0, 0, 10], fov: 40}} style={{height: '100%', width: '100%'}}>
+      <Html><button onClick={handleState}/></Html>
       <Suspense fallback ={<Html>{progress}% Loaded</Html>}>
         <hemisphereLight  intensity={1} color={('blue','white')}/>
         <OrbitControls />
@@ -49,7 +53,7 @@ export default function Render(props){
         {!show && <Amancer shadows castShadows scale={20} position ={[0,0,0]}  />}
       </Suspense>
     </Canvas>
-    <ArmoryUI />
+    <ArmoryUI onHover={handleState} />
   </motion.div>
   )
 }

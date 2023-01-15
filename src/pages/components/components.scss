@@ -68,19 +68,24 @@
 
 
 .main-ui {
- background-image: linear-gradient(to left, rgb(0, 0, 0), rgba(255,0,0,0));
+ background-image: linear-gradient(to left, rgba(20, 20, 20, 0.322), rgba(255,0,0,0)), url(/public/assets/card-5.png);
  position: absolute;
  border-radius: 10px;
+ background-size: cover;
  height: 95vh;
  width: 40vw;
+ backdrop-filter: blur(20px);
  bottom:0;
  left: 0;
+ color: #ffffff;
+ text-transform: uppercase;
+ letter-spacing: 1px;
 }
 
   
 .tag{
   color: rgb(238, 237, 237);
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.623), rgba(255,0,0,0));
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.623), rgba(255,0,0,0)),;
   text-transform: uppercase;
   backdrop-filter: blur(20px);
   padding: 10px;
@@ -95,7 +100,41 @@
 
 .storage{
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
+  margin: 0% 5% 5% 25% ;
+  font-size: small ;
+  scale: .8;
+  
+
+  .main-data{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-top: #dddddd85 dashed 4px;
+    
+    
+    .metadata{
+      background-color: #030303;
+      height: 3vh;
+      width: 50%;
+      text-align: center;
+      border-radius: 10px;
+      border: #ddddddb2 solid 2px;
+      padding: 10px 15px;
+      position: absolute;
+      right: 0;
+  
+  
+      h1{
+        margin: auto 0;
+      }
+    }
+
+  }
+
+
 }
 .storage-item{
   background-color:rgba(161, 188, 247, 0.15);
@@ -122,4 +161,45 @@
 .news-carousel{
   background-position: bottom;
   background-size: contain;
+}
+
+.attributes2{
+  background-color: #0303034d;
+  height: 10vh;
+  font-size: large;
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 10px;
+  backdrop-filter: blur(30px);
+
+  .attr-box2{
+    margin: 2%;
+    width: 46%;
+
+    img{
+      height: 10px;
+      margin: auto 0;
+      padding-right: 6px;
+      filter: grayscale(100%);
+      filter: invert(1);
+    }
+  }
+}
+
+.lore-armory{
+  font-size: larger;
+  padding: 10%;
+  text-align: center;
+}
+
+.cycle{
+  display: flex;
+  flex-direction: row;
+  
+
+  h1{
+    padding: 10%;
+    margin: 0 auto;
+    background-color: #49454546;
+  }
 }
