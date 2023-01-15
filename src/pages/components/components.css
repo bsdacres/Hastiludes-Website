@@ -73,21 +73,18 @@
   }
 }
 .main-ui {
-  background-color: rgba(13, 97, 97, 0.041);
+  background-image: linear-gradient(to left, rgb(0, 0, 0), rgba(255, 0, 0, 0));
   position: absolute;
   border-radius: 10px;
-  -webkit-backdrop-filter: blur(30px);
-          backdrop-filter: blur(30px);
-  height: 80vh;
-  width: 50vw;
-  bottom: 10vh;
-  left: 1%;
+  height: 95vh;
+  width: 40vw;
+  bottom: 0;
+  left: 0;
 }
 
 .tag {
   color: rgb(238, 237, 237);
-  background-color: rgba(0, 0, 0, 0.404);
-  border-radius: 10px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.623), rgba(255, 0, 0, 0));
   text-transform: uppercase;
   -webkit-backdrop-filter: blur(20px);
           backdrop-filter: blur(20px);
@@ -128,6 +125,6 @@
 }
 
 .news-carousel {
-  background-position: top;
+  background-position: bottom;
   background-size: contain;
 }/*# sourceMappingURL=components.css.map */
