@@ -1,5 +1,5 @@
 import '../styles/Sharedlayout.css'
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import Home from '../pages/Home'
 import SharedLayout from "../pages/SharedLayout";
 import News from '../pages/News';
@@ -14,6 +14,7 @@ import {
 import { Web3Modal } from "@web3modal/react";
 import { chain, configureChains, createClient, WagmiConfig } from "wagmi";
 import { useWeb3ModalTheme } from "@web3modal/react";
+import { UiContext } from './Context';
 
 const chains = [chain.mainnet, chain.polygon, chain.optimism, chain.arbitrum];
 
@@ -35,7 +36,7 @@ const ethereumClient = new EthereumClient(wagmiClient, chains);
 
 export default function App() {
     const { theme, setTheme } = useWeb3ModalTheme();
-
+    const [active, setActive] = useState(0)
     setTheme({ThemeMode:'light', themeColor: 'blackWhite', themeBackground: 'gradient'})
     
     return(

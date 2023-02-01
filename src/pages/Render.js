@@ -8,21 +8,14 @@ import { Suspense, } from 'react';
 import { EffectComposer, RenderPass, ReinhardToneMappingPass } from 'three-effectcomposer';
 import { Amancer } from './components/Amancer';
 import { Voe } from './components/Voe';
-
-
-
-
-let Random = Math.random;
-let count;
+import  { useGarmentStore } from './Context.js';
 
 
 export default function Render(props){
   const {progress} = useProgress();
-  const [show, setShow] = useState(true)
+  let garmentStore = useGarmentStore(state => state.showGarment)
+  console.log(`this is the ${garmentStore.state}`)
 
-  function handleState(){
-    setShow(()=>!show)
-  }
   return(
   <motion.div 
   initial={{ opacity: 0, scale: 0.95 }}
@@ -31,7 +24,6 @@ export default function Render(props){
   className='render'
   > 
     <Canvas  shadows flat camera={{ position: [0, 0, 10], fov: 40}} style={{height: '100%', width: '100%'}}>
-      <Html><button onClick={handleState}/></Html>
       <Suspense fallback ={<Html>{progress}% Loaded</Html>}>
         <hemisphereLight  intensity={1} color={('blue','white')}/>
         <OrbitControls />
@@ -49,11 +41,11 @@ export default function Render(props){
         <spotLight rotation={[Math.PI / 1, 10, 10]} intensity={.1} color="red" position={[-50, -50, 60]} />
         <spotLight rotation={[-Math.PI / 2, 10, 0]} intensity={1} color="orange" position={[10,  20, 0]} />
         <spotLight rotation={[Math.PI / 1, 0, 0]} intensity={.5} color="blue" position={[0, 30, 0]} />
-        {show && <Voe shadows castShadows scale={20} position ={[0,0,0]}  />}
-        {!show && <Amancer shadows castShadows scale={20} position ={[0,0,0]}  />}
+        {garmentStore == 0 && <Voe shadows castShadows scale={20} position ={[0,0,0]}  />}
+        {garmentStore == 1 && <Amancer shadows castShadows scale={20} position ={[0,0,0]}  />}
       </Suspense>
     </Canvas>
-    <ArmoryUI onHover={handleState} />
+    <ArmoryUI  />
   </motion.div>
   )
 }

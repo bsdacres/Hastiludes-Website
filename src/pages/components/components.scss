@@ -197,9 +197,18 @@
   flex-direction: row;
   
 
-  h1{
-    padding: 10%;
+  button {
+    padding: 0% 10%;
     margin: 0 auto;
-    background-color: #49454546;
+    background-color: #e0caca67;
+    border-radius: 10px;
+    color: rgb(250, 248, 248);
+
   }
+}
+
+
+button:hover{
+  background-color: #a3a3a3fd;
+  cursor: pointer;
 }
