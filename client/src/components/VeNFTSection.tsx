@@ -102,6 +102,9 @@ export default function VeNFTSection() {
             </article>
           ))}
         </div>
+        <p class="venft-scroll-hint" aria-hidden="true">
+          Swipe <span class="venft-scroll-arrow">&rarr;</span>
+        </p>
       </div>
     </section>
   );
