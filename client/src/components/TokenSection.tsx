@@ -10,32 +10,32 @@ const faqItems: FaqItem[] = [
   {
     question: "What is Hastiludes?",
     answer:
-      "Hastiludes is a medieval-themed game built on the Monad blockchain. You take up a knightly campaign, earn XP through play, and climb the ranks from Peasant Squire all the way to High Monarch.",
+      "Hastiludes is a SocialFi platform wrapped in a high-fantasy narrative. It turns becoming financially literate into a game, built around an auction ROSCA and tabletop-inspired events on the Monad blockchain.",
   },
   {
-    question: "Do I need crypto or a wallet to start?",
+    question: "What is an auction ROSCA?",
     answer:
-      "No. You can explore and start playing without any crypto. Connecting a wallet is optional and only unlocks on-chain progress and the rank tiers tied to MON.",
+      "A ROSCA (Rotating Savings and Credit Association) is a group savings circle: members contribute to a shared pool each round and one member receives the payout. In the auction version members bid for the pot, so saving and borrowing happen together. That circle is the engine at the heart of Hastiludes.",
   },
   {
-    question: "How does the XP and leveling system work?",
+    question: "How do I earn XP?",
     answer:
-      "You gain XP through play and on-chain activity. As your XP and MON grow, you advance through rank tiers, each with its own crest, oath, and standing in the realm.",
+      "You earn XP by interacting with the platform and with other dapps across the Monad blockchain. The more you explore, save, and take part, the more your character progresses.",
   },
   {
-    question: "Does Hastiludes use real money?",
+    question: "What is the character sheet?",
     answer:
-      "Core play is free. On-chain features run on MON, Monad's native token, but you are never required to spend to take part.",
+      "Every player gets a character sheet that tracks your XP, rank, and progress through the realm — a tabletop-style record of your journey as you grow more financially capable.",
   },
   {
-    question: "Is Hastiludes safe for beginners?",
+    question: "Why the fantasy and tabletop theme?",
     answer:
-      "Yes. You can start with no wallet and no crypto experience, and any wallet connection is always opt-in. Your keys and funds stay in your own wallet.",
+      "Money habits are easier to build when they feel like play. Hastiludes pairs real financial tools with tabletop-style events and a high-fantasy story, so learning to save, bid, and manage funds plays like a campaign rather than a chore.",
   },
   {
     question: "Is there a roadmap?",
     answer:
-      "Yes — the full roadmap is on the way. Follow along for tournament seasons, new ranks, and on-chain items.",
+      "Yes — the full roadmap is on the way. Follow along for ROSCA seasons, new events, and deeper character progression.",
   },
 ];
 
